@@ -66,12 +66,14 @@ Both notebooks hardcode the Agents SDK agent definitions, prompts, retrieval too
 
 - `src/case_review_demo/workflow.py` — code-controlled state machine and retry/repair loop.
 - `src/case_review_demo/agents_setup.py` — specialist agents and simple tool-calling orchestrators.
-- `src/case_review_demo/tools.py` — `@function_tool` retrieval over `data/prepared_cases.csv`.
+- `src/case_review_demo/tools.py` — `@function_tool` retrieval over `data/extended_prepared_cases.csv` by default.
 - `src/case_review_demo/notebook_steps.py` — notebook-friendly step wrapper for trace comparison.
 - `src/case_review_demo/guardrails.py` — SDK input, tool, and final output guardrails.
 - `src/case_review_demo/models.py` — Pydantic schemas for every checkpoint.
-- `scripts/prepare_cases.py` — reproducible preparation script for the Mendeley dataset.
-- `data/prepared_cases.csv` — small classroom fixture.
+- `scripts/build_extended_dataset.py` — downloads and merges the public Mendeley + Zenodo datasets.
+- `scripts/prepare_cases.py` — Mendeley-only preparation helper.
+- `data/extended_prepared_cases.csv` — merged retrieval dataset from Mendeley + Zenodo.
+- `data/prepared_cases.csv` — tiny classroom smoke-test fixture.
 
 ## Teaching notes
 

@@ -23,6 +23,7 @@ env/
 # Local run outputs
 logs/*
 !logs/.gitkeep
+.cache/
 
 # OS/editor
 .DS_Store

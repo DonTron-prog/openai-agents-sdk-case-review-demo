@@ -20,7 +20,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="Prepared classroom scenario to run.",
     )
     parser.add_argument("--case-text", help="Custom case text. Overrides --scenario.")
-    parser.add_argument("--data", default="data/prepared_cases.csv", help="Prepared CSV path.")
+    parser.add_argument("--data", default="data/extended_prepared_cases.csv", help="Prepared CSV path.")
     parser.add_argument("--log-dir", default="logs", help="Directory for local JSONL run logs.")
     parser.add_argument(
         "--model",
